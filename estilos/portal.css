@@ -1,0 +1,81 @@
+/* Estilos compartilhados do portal: início, catálogos e navegação. */
+.portal, .portal-navegacao {
+  --portal-fundo: #f5f7f6;
+  --portal-superficie: #ffffff;
+  --portal-texto: #172e29;
+  --portal-suave: #536761;
+  --portal-verde: #176653;
+  --portal-verde-escuro: #114b3e;
+  --portal-claro: #eaf4ee;
+  --portal-borda: #dbe6e0;
+  --portal-raio: 16px;
+}
+.portal * { box-sizing: border-box; }
+.portal { margin: 0; background: var(--portal-fundo); color: var(--portal-texto); font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.portal a { color: inherit; text-decoration: none; }
+.portal :is(h1,h2,h3,p) { margin: 0; }
+.portal a:focus-visible, .portal-navegacao a:focus-visible { outline: 3px solid #bd791f; outline-offset: 4px; }
+.portal-largura { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+.portal-cabecalho { background: var(--portal-superficie); border-bottom: 1px solid var(--portal-borda); }
+.portal-barra { display: flex; justify-content: space-between; align-items: center; min-height: 78px; gap: 16px; }
+.portal-marca { display: inline-flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 750; line-height: 1.2; }
+.portal-marca small { display: block; font-size: 12px; font-weight: 500; color: var(--portal-suave); margin-top: 3px; }
+.portal-icone { width: 30px; height: 30px; flex-shrink: 0; }
+.portal-marca .portal-icone { color: var(--portal-verde); width: 35px; height: 35px; }
+.portal-contato { display: inline-flex; align-items: center; gap: 9px; padding: 10px 16px; border: 1px solid var(--portal-borda); border-radius: 8px; font-size: 14px; font-weight: 650; }
+.portal-contato:hover { background: var(--portal-claro); }
+.portal-apresentacao { display: grid; grid-template-columns: 1.35fr 1fr; align-items: center; gap: 48px; padding: 56px 0 48px; }
+.portal-sobretitulo { color: var(--portal-verde); font-size: 11px; font-weight: 750; letter-spacing: .12em; }
+.portal h1 { font-size: clamp(35px, 5vw, 62px); line-height: 1.08; letter-spacing: -.045em; margin: 14px 0 18px; font-weight: 750; }
+.portal-intro { font-size: 17px; color: var(--portal-suave); max-width: 56ch; }
+.portal-apresentacao > div > .portal-botao { margin-top: 24px; }
+.portal-botao { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 42px; border-radius: 8px; padding: 10px 15px; background: var(--portal-verde); color: #fff !important; border: 1px solid var(--portal-verde); font-size: 14px; font-weight: 650; text-align: center; transition: background .15s; }
+.portal-botao:hover { background: var(--portal-verde-escuro); }
+.portal-secundario { background: transparent; color: var(--portal-verde) !important; border-color: var(--portal-borda); }
+.portal-secundario:hover { background: var(--portal-claro); }
+.portal-perfil { background: var(--portal-superficie); border: 1px solid var(--portal-borda); border-radius: var(--portal-raio); padding: 25px 28px; box-shadow: 0 8px 30px #153d2810; }
+.portal-monograma { display: grid; place-items: center; width: 53px; height: 53px; border-radius: 50%; font-size: 26px; font-weight: 650; color: var(--portal-verde); background: var(--portal-claro); margin-bottom: 15px; }
+.portal-perfil h2 { font-size: 28px; line-height: 1.2; letter-spacing: -.025em; margin: 5px 0; }
+.portal-perfil > p:not(.portal-sobretitulo) { color: var(--portal-suave); }
+.portal-perfil .portal-profissao { font-weight: 650; color: var(--portal-texto) !important; }
+.portal-whatsapp { margin-top: 18px; width: 100%; }
+.portal-numero { margin-top: 8px !important; font-size: 13px; text-align: center; }
+.portal-temas { scroll-margin-top: 24px; padding-bottom: 30px; }
+.portal-titulo-secao { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.portal-titulo-secao h2 { font-size: 29px; line-height: 1.2; margin-top: 6px; letter-spacing: -.025em; }
+.portal-titulo-secao > span { font-size: 13px; color: var(--portal-suave); }
+.portal-grade { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+.portal-cartao { display: flex; flex-direction: column; min-width: 0; background: var(--portal-superficie); border: 1px solid var(--portal-borda); border-radius: var(--portal-raio); padding: 22px; }
+.portal-cartao-topo { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.portal-cartao-topo .portal-icone { color: var(--portal-verde); background: var(--portal-claro); border-radius: 10px; width: 45px; height: 45px; padding: 10px; }
+.portal-cartao-topo span { font-size: 13px; color: var(--portal-suave); font-variant-numeric: tabular-nums; }
+.portal-cartao h3 { font-size: 20px; line-height: 1.3; letter-spacing: -.02em; margin-bottom: 10px; }
+.portal-cartao p { color: var(--portal-suave); font-size: 14px; line-height: 1.65; margin-bottom: 20px; }
+.portal-acoes { margin-top: auto; display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.portal-acoes .portal-botao { padding-inline: 10px; }
+.portal-revisao { display: flex; align-items: center; gap: 20px; border: 1px solid var(--portal-borda); border-radius: var(--portal-raio); padding: 24px; background: var(--portal-claro); margin: 0 0 46px; }
+.portal-revisao > .portal-icone { color: var(--portal-verde); width: 38px; height: 38px; }
+.portal-revisao > div { flex: 1; }
+.portal-revisao h2 { font-size: 21px; margin-bottom: 4px; }
+.portal-revisao p { color: var(--portal-suave); font-size: 14px; }
+.portal-revisao .portal-botao { background: white; }
+.portal-rodape { border-top: 1px solid var(--portal-borda); background: var(--portal-superficie); padding: 23px 0; font-size: 13px; color: var(--portal-suave); }
+.portal-rodape > div { display: flex; gap: 12px 24px; flex-wrap: wrap; justify-content: space-between; }
+.portal-rodape a { color: var(--portal-verde); font-weight: 650; }
+.portal-listagem { padding: 35px 0 55px; min-height: 68vh; }
+.portal-trilha { font-size: 14px; color: var(--portal-suave); }
+.portal-trilha a { color: var(--portal-verde); text-decoration: underline; }
+.portal-listagem h1 { font-size: clamp(30px,4vw,46px); }
+.portal-listagem > .portal-botao { margin-top: 20px; }
+.portal-listas { display: grid; gap: 12px; margin-top: 28px; }
+.portal-lista { display: flex; align-items: center; justify-content: space-between; gap: 18px; background: var(--portal-superficie); border: 1px solid var(--portal-borda); border-radius: var(--portal-raio); padding: 22px; }
+.portal-lista h2 { font-size: 19px; line-height: 1.35; }
+.portal-lista p { color: var(--portal-suave); font-size: 14px; margin-top: 6px; }
+.portal-lista .portal-botao { flex-shrink: 0; }
+/* Navegação comum adicionada às páginas antigas, sem redefinir suas classes. */
+.portal-navegacao { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 auto 18px; max-width: 1200px; font: 14px/1.4 system-ui,sans-serif; }
+.portal-navegacao a { padding: 9px 14px; border: 1px solid var(--portal-borda); border-radius: 8px; background: var(--portal-superficie); color: var(--portal-verde); text-decoration: none; font-weight: 650; }
+.portal-navegacao a:hover { background: var(--portal-claro); }
+@media (max-width: 1000px) { .portal-grade { grid-template-columns: repeat(2,minmax(0,1fr)); } .portal-apresentacao { gap: 28px; } }
+@media (max-width: 650px) { .portal-largura { width: calc(100% - 32px); } .portal-barra { min-height: 65px; } .portal-apresentacao { grid-template-columns: 1fr; padding: 34px 0; gap: 24px; } .portal-grade { grid-template-columns: 1fr; } .portal-titulo-secao { align-items: start; } .portal-titulo-secao > span { display: none; } .portal-revisao { align-items: start; flex-wrap: wrap; } .portal-revisao > div { flex-basis: 70%; } .portal-revisao .portal-botao { width: 100%; } .portal-lista { flex-direction: column; align-items: stretch; } .portal-rodape > div { flex-direction: column; gap: 8px; } }
+@media print { .portal-navegacao { display: none !important; } }

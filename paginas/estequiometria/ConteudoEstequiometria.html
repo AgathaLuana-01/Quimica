@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Estequiometria · Reações sucessivas, excesso, impurezas e rendimento</title>
+<!-- Fonte Inter (opcional) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&amp;display=swap" rel="stylesheet"/>
+<!-- ===== CSS MODULARIZADO ===== -->
+<link href="../../estilos/principal.css" rel="stylesheet"/>
+<link href="../../estilos/portal.css" rel="stylesheet"/></head>
+<body>
+<div class="slide-container"><nav aria-label="Navegação principal" class="portal-navegacao"><a href="../../index.html">← Todos os temas</a><a href="ConteudoEstequiometria.html">Conteúdo do tema</a><a href="Exercicios/index.html">Listas de exercícios</a></nav>
+<nav style="margin-bottom:1rem"><a class="tag" href="../../index.html">← Todas as aulas</a></nav>
+<!-- ============================================================
+    SLIDE 1 – INTRODUÇÃO / LEIS PONDERAIS
+    ============================================================ -->
+<div class="slide">
+<div class="slide-header">
+<span class="icon-big">⚗️</span>
+<h2>Estequiometria · Fundamentos e Leis</h2>
+<span class="badge">Base teórica</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>📌 Leis Ponderais</h3>
+<div class="highlight-box">
+<strong>Lei de Lavoisier (Conservação das Massas)</strong>
+<p style="margin-top:0.5rem;">"Na natureza, nada se cria, nada se perde, tudo se transforma."
+                        </p>
+<p>Em um sistema fechado, a massa total dos reagentes é igual à massa total dos produtos.</p>
+<div class="formula-block" style="font-size:1rem; margin-top:0.5rem;">
+                            A + B → C + D<br/>
+<span class="small">massa(A) + massa(B) = massa(C) + massa(D)</span>
+</div>
+</div>
+<div class="highlight-box" style="border-left-color: #0b4f40;">
+<strong>Lei de Proust (Proporções Definidas)</strong>
+<p style="margin-top:0.5rem;">Uma substância composta é sempre formada pelos mesmos elementos
+                            unidos em uma proporção fixa e constante de massa.</p>
+<div class="formula-block" style="font-size:0.9rem; margin-top:0.5rem;">
+                            A + B → C<br/>
+                            2g + 6g → 8g<br/>
+                            4g + 12g → 16g
+                        </div>
+</div>
+</div>
+<div class="text-block">
+<h3>🧪 Tabela de Unidades</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Unidade</th>
+<th>Equivale em gramas (g)</th>
+<th>Valor decimal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 t</td>
+<td>1 × 10⁶ g</td>
+<td>1.000.000</td>
+</tr>
+<tr>
+<td>1 kg</td>
+<td>1 × 10³ g</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>1 hg</td>
+<td>1 × 10² g</td>
+<td>100</td>
+</tr>
+<tr>
+<td>1 dag</td>
+<td>1 × 10¹ g</td>
+<td>10</td>
+</tr>
+<tr>
+<td>1 g</td>
+<td>1 × 10⁰ g</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1 dg</td>
+<td>1 × 10⁻¹ g</td>
+<td>0,1</td>
+</tr>
+<tr>
+<td>1 cg</td>
+<td>1 × 10⁻² g</td>
+<td>0,01</td>
+</tr>
+<tr>
+<td>1 mg</td>
+<td>1 × 10⁻³ g</td>
+<td>0,001</td>
+</tr>
+<tr>
+<td>1 μg</td>
+<td>1 × 10⁻⁶ g</td>
+<td>0,000001</td>
+</tr>
+<tr>
+<td>1 ng</td>
+<td>1 × 10⁻⁹ g</td>
+<td>0,000000001</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tag">⚠️ SEMPRE balanceie a equação antes de qualquer cálculo!</div>
+</div>
+</div>
+</div>
+<!-- ============================================================
+SLIDE 2 – FLUXOGRAMA E BALANCEAMENTO (REFORMULADO)
+============================================================ -->
+<div class="slide">
+<div class="slide-header">
+<span class="icon-big">📊</span>
+<h2>Fluxograma e Balanceamento de Equações</h2>
+<span class="badge">Passo a passo</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>🔁 Fluxograma que resolve quase todas as questões</h3>
+<div class="formula-block" style="font-size:1rem; background: var(--primary-light); border-color: var(--primary); text-align:left; padding:1.2rem 1.8rem;">
+<strong>1.</strong> Balanceie a equação química<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>2.</strong> Calcule as massas molares dos compostos<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>3.</strong> Converta as massas para quantidade de matéria (mol), se necessário<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>4.</strong> Identifique o reagente limitante<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>5.</strong> Calcule a quantidade do reagente em excesso<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>6.</strong> Calcule a quantidade de produto formado<br/>
+<strong style="color:var(--primary);">↓</strong><br/>
+<strong>7.</strong> Aplique as correções de pureza e/ou rendimento (se houver)
+                    </div>
+<div class="highlight-box">
+<strong>⚠️ Regra de ouro da estequiometria:</strong>
+<p style="margin-top:0.3rem;">Nunca inicie um cálculo estequiométrico sem antes
+                            <strong>balancear corretamente</strong> a equação química. O balanceamento garante que a
+                            <strong>Lei de Lavoisier</strong> (conservação das massas) seja respeitada.
+                        </p>
+</div>
+<p style="margin-top:0.5rem; font-size:0.95rem; color:var(--text-muted);">
+<em>Referência: BROWN, T. L. Química: A ciência central. 9. ed. São Paulo: Pearson, 2005. p.
+                            88-89.</em>
+</p>
+</div>
+<div class="text-block">
+<h3>⚖️ Balanceamento: Exemplo N₂ + H₂ → NH₃</h3>
+<p><strong>Passo a passo para balancear a equação:</strong></p>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem 1.5rem; border:1px solid #b7d0da; margin:0.5rem 0;">
+<p><strong>1. Escreva a equação não balanceada:</strong></p>
+<div class="formula-block" style="font-size:1.1rem; margin:0.3rem 0; padding:0.5rem;">
+                            N₂ + H₂ → NH₃
+                        </div>
+<p style="font-size:0.95rem; color:var(--text-muted);">(Reação de síntese da amônia)</p>
+</div>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem 1.5rem; border:1px solid #b7d0da; margin:0.5rem 0;">
+<p><strong>2. Conte os átomos de cada elemento nos reagentes e produtos:</strong></p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin:0.3rem 0;">
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center;">
+<strong>Reagentes</strong><br/>
+                                N: 2 átomos<br/>
+                                H: 2 átomos
+                            </div>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center;">
+<strong>Produtos</strong><br/>
+                                N: 1 átomo<br/>
+                                H: 3 átomos
+                            </div>
+</div>
+<div class="tag" style="margin-top:0.3rem;">⚠️ A equação está <strong>desbalanceada</strong>! N
+                            e H não estão iguais nos dois lados.</div>
+</div>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem 1.5rem; border:1px solid #b7d0da; margin:0.5rem 0;">
+<p><strong>3. Ajuste os coeficientes para igualar as quantidades:</strong></p>
+<ul style="font-size:0.95rem;">
+<li>Para igualar o N: coloque <strong>2</strong> na frente do NH₃</li>
+<li>N₂ + H₂ → <strong>2</strong> NH₃</li>
+<li>Agora o N está balanceado (2 = 2), mas o H ficou: 2 (reagentes) e 6 (produtos)</li>
+<li>Para igualar o H: coloque <strong>3</strong> na frente do H₂</li>
+<li>N₂ + <strong>3</strong> H₂ → 2 NH₃</li>
+</ul>
+</div>
+<div style="background:var(--primary-light); border-radius:20px; padding:1rem 1.5rem; border:2px solid var(--primary); margin:0.5rem 0;">
+<p><strong>✅ Equação balanceada final:</strong></p>
+<div class="formula-block" style="font-size:1.3rem; margin:0.3rem 0; background:white; border-color:var(--primary);">
+                            N₂ + 3 H₂ → 2 NH₃
+                        </div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-top:0.3rem;">
+<div style="background:white; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<strong>Reagentes</strong><br/>
+                                N: 1×2 = <strong>2</strong><br/>
+                                H: 3×2 = <strong>6</strong>
+</div>
+<div style="background:white; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<strong>Produtos</strong><br/>
+                                N: 2×1 = <strong>2</strong><br/>
+                                H: 2×3 = <strong>6</strong>
+</div>
+</div>
+<div class="tag" style="margin-top:0.3rem; background:var(--primary); color:white;">✅ N e H
+                            estão balanceados! A equação respeita a Lei de Lavoisier.</div>
+</div>
+<div style="margin-top:0.5rem;">
+<div class="tag">💡 <strong>Coeficiente estequiométrico</strong> = indica a quantidade de
+                            moléculas OU de mols na reação.</div>
+<div class="tag" style="margin-top:0.3rem;">📌 Na equação balanceada: <strong>1 mol de
+                                N₂</strong> reage com <strong>3 mol de H₂</strong> para produzir <strong>2 mol de
+                                NH₃</strong>.</div>
+</div>
+<p style="margin-top:0.8rem; font-size:0.9rem; color:var(--text-muted);">
+<em>Referência: ATKINS, P.; JONES, L. Princípios de química: questionando a vida moderna e o
+                            meio ambiente. 5. ed. Porto Alegre: Bookman, 2012. Cap. 3.</em>
+</p>
+</div>
+</div>
+</div>
+<!-- ============================================================
+SLIDE 3 – REAGENTE LIMITANTE E EXCESSO (REORGANIZADO)
+============================================================ -->
+<div class="slide">
+<div class="slide-header">
+<span class="icon-big">⚖️</span>
+<h2>Reagente Limitante e Reagente em Excesso</h2>
+<span class="badge">Conceito e aplicação</span>
+</div>
+<div class="content-single text-block">
+<!-- ============================================================
+        SEÇÃO 1: CÁLCULO DAS MASSAS MOLARES (PRIMEIRO!)
+        ============================================================ -->
+<div style="background:#f5f9fc; border-radius:20px; padding:1.2rem 1.8rem; border:1px solid #b7d0da; margin-bottom:1.5rem;">
+<h3 style="margin-top:0;">🧮 Entendendo as massas na equação</h3>
+<div style="background:white; border-radius:16px; padding:1rem; border:1px solid #b7d0da;">
+<p><strong>Reação balanceada:</strong></p>
+<div class="formula-block" style="font-size:1.2rem; margin:0.3rem 0; background:var(--primary-light); border-color:var(--primary);">
+                            2 H₂ + O₂ → 2 H₂O
+                        </div>
+<p style="margin-top:0.5rem;"><strong>📌 O que os coeficientes significam?</strong></p>
+<div style="display:grid; grid-template-columns:auto auto auto auto auto; gap:0.5rem; align-items:center; justify-content:center; margin:0.5rem 0;">
+<div style="background:#eef4f8; padding:0.5rem 1rem; border-radius:12px; text-align:center; white-space:nowrap;">
+<strong>2</strong> moléculas de H₂
+                            </div>
+<div style="background:#eef4f8; padding:0.3rem 0.5rem; border-radius:12px; text-align:center; font-size:1.5rem; color:var(--primary); white-space:nowrap;">
+                                +
+                            </div>
+<div style="background:#eef4f8; padding:0.5rem 1rem; border-radius:12px; text-align:center; white-space:nowrap;">
+<strong>1</strong> molécula de O₂
+                            </div>
+<div style="background:#eef4f8; padding:0.3rem 0.5rem; border-radius:12px; text-align:center; font-size:1.5rem; color:var(--primary); white-space:nowrap;">
+                                →
+                            </div>
+<div style="background:#eef4f8; padding:0.5rem 1rem; border-radius:12px; text-align:center; white-space:nowrap;">
+<strong>2</strong> moléculas de H₂O
+                            </div>
+</div>
+<div class="tag" style="margin-top:0.3rem;">💡 O coeficiente indica a quantidade de moléculas
+                            (ou mols) que participam da reação.</div>
+</div>
+<div style="background:white; border-radius:16px; padding:1rem; border:1px solid #b7d0da; margin-top:0.8rem;">
+<p><strong>📌 Como calcular a massa de cada substância?</strong></p>
+<p style="font-size:0.95rem; background:#eef4f8; padding:0.3rem 0.8rem; border-radius:8px; display:inline-block; margin-bottom:0.5rem;">
+<strong>Fórmula:</strong> Coeficiente × Massa Atômica × Quantidade de átomos
+                        </p>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.8rem; margin:0.5rem 0;">
+<!-- H₂ -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:1.1rem; font-weight:bold; color:var(--primary-dark);">H₂</div>
+<div style="font-size:0.9rem; margin-top:0.3rem;">
+<strong>Cálculo:</strong><br/>
+                                    2 × 1 × 2 = <strong>4 g</strong>
+</div>
+<div style="background:white; padding:0.3rem; border-radius:8px; margin-top:0.3rem; font-size:0.8rem; border:1px solid #b7d0da;">
+                                    Coeficiente × Massa Atômica × Átomos
+                                </div>
+</div>
+<!-- O₂ -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:1.1rem; font-weight:bold; color:var(--primary-dark);">O₂</div>
+<div style="font-size:0.9rem; margin-top:0.3rem;">
+<strong>Cálculo:</strong><br/>
+                                    1 × 16 × 2 = <strong>32 g</strong>
+</div>
+<div style="background:white; padding:0.3rem; border-radius:8px; margin-top:0.3rem; font-size:0.8rem; border:1px solid #b7d0da;">
+                                    Coeficiente × Massa Atômica × Átomos
+                                </div>
+</div>
+<!-- H₂O -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:1.1rem; font-weight:bold; color:var(--primary-dark);">H₂O</div>
+<div style="font-size:0.9rem; margin-top:0.3rem;">
+<strong>Cálculo:</strong><br/>
+                                    2 × [(1×2) + (16×1)] = <strong>36 g</strong>
+</div>
+<div style="background:white; padding:0.3rem; border-radius:8px; margin-top:0.3rem; font-size:0.8rem; border:1px solid #b7d0da;">
+                                    2 × (H₂ + O)
+                                </div>
+</div>
+</div>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary); text-align:center; margin-top:0.5rem;">
+<strong>📊 Resumo:</strong><br/>
+<span style="background:white; padding:0.2rem 1rem; border-radius:20px; border:1px solid var(--primary); font-weight:bold;">2
+                                H₂ = 4 g</span>
+<span style="margin:0 0.3rem;">+</span>
+<span style="background:white; padding:0.2rem 1rem; border-radius:20px; border:1px solid var(--primary); font-weight:bold;">O₂
+                                = 32 g</span>
+<span style="margin:0 0.3rem;">→</span>
+<span style="background:white; padding:0.2rem 1rem; border-radius:20px; border:1px solid var(--primary); font-weight:bold;">2
+                                H₂O = 36 g</span>
+</div>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; margin-top:0.5rem; text-align:center; font-size:0.95rem;">
+<strong>⚖️ Lei de Lavoisier:</strong> 4g + 32g = 36g (a massa se conserva!)
+                        </div>
+</div>
+<div style="background:white; border-radius:16px; padding:1rem; border:1px solid #b7d0da; margin-top:0.8rem;">
+<p><strong>📌 Relação entre mols e massa:</strong></p>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.5rem; margin:0.5rem 0;">
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<strong>2 mol</strong> de H₂<br/>
+<span style="font-size:0.85rem; color:var(--text-muted);">= 4g</span>
+</div>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<strong>1 mol</strong> de O₂<br/>
+<span style="font-size:0.85rem; color:var(--text-muted);">= 32g</span>
+</div>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da;">
+<strong>2 mol</strong> de H₂O<br/>
+<span style="font-size:0.85rem; color:var(--text-muted);">= 36g</span>
+</div>
+</div>
+<div class="tag" style="margin-top:0.3rem;">💡 <strong>Coeficiente estequiométrico</strong> =
+                            quantidade de moléculas OU quantidade de mols, dependendo do contexto.</div>
+</div>
+</div>
+<!-- ============================================================
+        SEÇÃO 2: CONCEITO DE REAGENTE LIMITANTE
+        ============================================================ -->
+<div style="background:#f5f9fc; border-radius:20px; padding:1.2rem 1.8rem; border:1px solid #b7d0da; margin-bottom:1.5rem;">
+<h3 style="margin-top:0;">🔍 O que são Reagente Limitante e Reagente em Excesso?</h3>
+<p>
+                        Quando dois ou mais reagentes são misturados para realizar uma reação química, é possível que um
+                        deles esteja em
+                        <strong>quantidade maior</strong> do que a necessária para reagir completamente com o outro.
+                    </p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:0.8rem;">
+<div style="background:white; border-radius:16px; padding:1rem; border-left:6px solid var(--primary); box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<strong style="color:var(--primary-dark);">🧪 Reagente Limitante</strong>
+<p style="margin-top:0.3rem; font-size:0.95rem;">
+                                É o reagente <strong>consumido totalmente</strong> primeiro durante a reação.
+                                Ele <strong>limita</strong> a quantidade de produto que pode ser formado, pois quando
+                                acaba,
+                                a reação para, mesmo que ainda haja outros reagentes.
+                            </p>
+</div>
+<div style="background:white; border-radius:16px; padding:1rem; border-left:6px solid #e67e22; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<strong style="color:#e67e22;">🧪 Reagente em Excesso</strong>
+<p style="margin-top:0.3rem; font-size:0.95rem;">
+                                É o reagente presente em <strong>quantidade superior</strong> à necessária para reagir
+                                completamente com o reagente limitante. Após a reação, <strong>sobra</strong> uma parte
+                                desse reagente sem reagir.
+                            </p>
+</div>
+</div>
+</div>
+<!-- ============================================================
+        SEÇÃO 3: ANALOGIA DO BRIGADEIRO
+        ============================================================ -->
+<div style="background:var(--primary-light); border-radius:20px; padding:1.2rem 1.8rem; border:2px solid var(--primary); margin-bottom:1.5rem;">
+<h3 style="margin-top:0; color:var(--primary-dark);">🍫 Analogia: Fazendo brigadeiros</h3>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.8rem; margin:0.8rem 0;">
+<div style="background:white; border-radius:16px; padding:0.8rem; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:2rem;">🥛</div>
+<strong>Leite condensado</strong>
+<p style="font-size:0.85rem; margin-top:0.2rem;">400 g</p>
+</div>
+<div style="background:white; border-radius:16px; padding:0.8rem; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:2rem;">🍫</div>
+<strong>Chocolate em pó</strong>
+<p style="font-size:0.85rem; margin-top:0.2rem;">100 g</p>
+</div>
+<div style="background:white; border-radius:16px; padding:0.8rem; text-align:center; border:1px solid #b7d0da;">
+<div style="font-size:2rem;">🧈</div>
+<strong>Manteiga</strong>
+<p style="font-size:0.85rem; margin-top:0.2rem;">50 g</p>
+</div>
+</div>
+<p style="font-weight:500; text-align:center;">A receita diz: <strong>400 g de leite + 100 g de
+                            chocolate + 50 g de manteiga → 500 g de brigadeiro</strong></p>
+<!-- SITUAÇÃO 1 -->
+<div style="background:white; border-radius:16px; padding:1rem; margin:0.8rem 0; border:1px solid #b7d0da;">
+<p><strong>📌 Situação 1 – Proporção exata:</strong></p>
+<p>Temos 400 g de leite condensado, 100 g de chocolate e 50 g de manteiga.</p>
+<ul>
+<li>Todos os ingredientes estão na proporção correta da receita</li>
+<li>Não há excesso de nenhum ingrediente</li>
+<li>Produzimos exatamente <strong>500 g de brigadeiro</strong></li>
+</ul>
+<div class="tag" style="margin-top:0.3rem;">✅ Neste caso, nenhum reagente está em excesso.</div>
+</div>
+<!-- SITUAÇÃO 2 -->
+<div style="background:white; border-radius:16px; padding:1rem; margin:0.8rem 0; border:1px solid #b7d0da;">
+<p><strong>📌 Situação 2 – Com excesso:</strong></p>
+<p>Temos <strong>1200 g de leite condensado</strong> e <strong>100 g de chocolate</strong>.</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin:0.5rem 0;">
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center;">
+<strong>🥛 Leite condensado</strong><br/>
+                                1200 g disponível
+                            </div>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center;">
+<strong>🍫 Chocolate</strong><br/>
+                                100 g disponível
+                            </div>
+</div>
+<p><strong>Como descobrir qual ingrediente vai acabar primeiro (limitante)?</strong></p>
+<!-- Passo 1: Testando o leite -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; margin:0.5rem 0;">
+<p><strong>Passo 1 – Vamos testar se o leite é o limitante:</strong></p>
+<ul>
+<li>Se usarmos <strong>todo o leite</strong> (1200 g), quanto de chocolate será
+                                    necessário?</li>
+</ul>
+<div style="background:white; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da; margin:0.3rem 0;">
+<strong>Regra de três:</strong><br/>
+                                400 g de leite — 100 g de chocolate<br/>
+                                1200 g de leite — x<br/>
+                                x = (1200 × 100) ÷ 400 = <strong>300 g de chocolate</strong>
+</div>
+<ul>
+<li>Para usar todo o leite, precisaríamos de <strong>300 g de chocolate</strong></li>
+<li>Mas <strong>só temos 100 g de chocolate</strong> disponível</li>
+<li>
+<strong style="color:var(--primary-dark);">Conclusão:</strong><br/>
+<span style="text-transform: uppercase;">Não temos chocolate suficiente para usar
+                                        todo o leite.</span><br/>
+<strong>Portanto, o leite NÃO é o limitante – ele está em EXCESSO!</strong>
+</li>
+</ul>
+</div>
+<!-- Passo 2: Testando o chocolate -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; margin:0.5rem 0;">
+<p><strong>Passo 2 – Agora vamos testar se o chocolate é o limitante:</strong></p>
+<ul>
+<li>Se usarmos <strong>todo o chocolate</strong> (100 g), quanto de leite será
+                                    necessário?</li>
+</ul>
+<div style="background:white; padding:0.5rem; border-radius:12px; text-align:center; border:1px solid #b7d0da; margin:0.3rem 0;">
+<strong>Regra de três:</strong><br/>
+                                400 g de leite — 100 g de chocolate<br/>
+                                x — 100 g de chocolate<br/>
+                                x = (400 × 100) ÷ 100 = <strong>400 g de leite</strong>
+</div>
+<ul>
+<li>Para usar todo o chocolate, precisamos de <strong>400 g de leite</strong></li>
+<li>Temos <strong>1200 g de leite</strong> disponível</li>
+<li><strong style="color:var(--primary-dark);">Conclusão:</strong> Temos leite mais que
+                                    suficiente para usar todo o chocolate!<br/>
+<strong>Portanto, o chocolate É o limitante</strong> – ele vai acabar primeiro!
+                                </li>
+</ul>
+</div>
+<!-- Passo 3 – Quanto de leite vai sobrar? -->
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; margin:0.5rem 0;">
+<p><strong>Passo 3 – Quanto de leite vai sobrar?</strong></p>
+<ul>
+<li>O chocolate é o limitante, então ele vai acabar primeiro (100 g)</li>
+<li>Com 100 g de chocolate, conseguimos usar <strong>400 g de leite</strong></li>
+<li>Tínhamos 1200 g de leite</li>
+<li><strong>Excesso = 1200 – 400 = 800 g de leite</strong></li>
+</ul>
+</div>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary);">
+<strong>✅ Conclusão final:</strong><br/>
+                            • <strong style="color:var(--primary-dark);">Chocolate é o reagente limitante</strong> (vai
+                            acabar primeiro)<br/>
+                            • <strong style="color:#e4146b;">Leite está em excesso</strong> (sobram 800 g)<br/>
+                            • A produção de brigadeiro para quando o chocolate acabar
+                        </div>
+</div>
+</div>
+<!-- ============================================================
+        SEÇÃO 4: MÉTODOS PARA IDENTIFICAR O REAGENTE LIMITANTE
+        ============================================================ -->
+<!-- ============================================================
+SEÇÃO: MÉTODOS PARA IDENTIFICAR O REAGENTE LIMITANTE
+============================================================ -->
+<div style="background:#f5f9fc; border-radius:20px; padding:1.2rem 1.8rem; border:1px solid #b7d0da;">
+<h3 style="margin-top:0;">📐 Como identificar o reagente limitante na prática?</h3>
+<!-- EQUAÇÃO QUÍMICA -->
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>Reação química:</strong></p>
+<div class="formula-block" style="font-size:1.2rem; margin:0; background:var(--primary-light); border-color:var(--primary); display:inline-block; padding:0.3rem 1.5rem;">
+                            2 H₂ + O₂ → 2 H₂O
+                        </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+                            Proporção estequiométrica: <strong>2 mol de H₂</strong> reagem com <strong>1 mol de
+                                O₂</strong>
+</div>
+</div>
+<p style="font-size:0.95rem; margin-bottom:0.8rem;">
+<strong>Questão:</strong> Adicionamos 40g de H₂ e 400g de O₂. Qual é o reagente limitante e qual
+                        está em excesso?
+                    </p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+<!-- MÉTODO 1 – REGRA DE TRÊS -->
+<div style="background:white; border-radius:16px; padding:1rem; border-left:6px solid var(--primary);">
+<strong style="color:var(--primary-dark);">Método 1 – Regra de três</strong>
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; margin-top:0.5rem; font-size:0.9rem;">
+<strong>Passo 1 – Calcular a proporção em massa:</strong><br/><br/>
+
+                                2 H₂ = 2 × 1 × 2 = <strong>4 g</strong><br/>
+                                O₂ = 1 × 16 × 2 = <strong>32 g</strong><br/><br/>
+<center>
+<strong>Proporção:</strong><br/>
+                                    4 g de H₂ — 32 g de O₂
+                                </center>
+<br/>
+<strong>Passo 2 – Calcular quanto de O₂ é necessário para reagir com 40 g de
+                                    H₂:</strong><br/><br/>
+<center>
+                                    4 g de H₂ ---- 32 g de O₂<br/>
+                                    40 g de H₂ --------------- x<br/><br/>
+                                    x = (40 × 32) ÷ 4 = <strong>320 g de O₂</strong>
+</center>
+<br/>
+<strong>Passo 3 – Comparar com o que temos disponível:</strong><br/>
+                                • Precisamos de: <strong>320 g de O₂</strong><br/>
+                                • Temos disponível: <strong>400 g de O₂</strong><br/>
+                                • 400 &gt; 320 → <strong style="color:#e67e22;">O₂ está em excesso</strong><br/><br/>
+<strong>Conclusão:</strong><br/>
+<strong style="color:var(--primary-dark);">H₂ é o reagente limitante</strong> (vai
+                                acabar primeiro)<br/>
+<strong style="color:#e67e22;">O₂ está em excesso</strong> (sobram 80 g)
+                            </div>
+</div>
+<!-- MÉTODO 2 – COMPARANDO PROPORÇÕES -->
+<div style="background:white; border-radius:16px; padding:1rem; border-left:6px solid #e67e22;">
+<strong style="color:#e67e22;">Método 2 – Comparando as proporções</strong>
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px; margin-top:0.5rem; font-size:0.9rem;">
+<strong>Passo 1 – Calcular os mols:</strong><br/><br/>
+
+                                H₂ = 40 ÷ 2 = <strong>20 mol</strong><br/>
+                                O₂ = 400 ÷ 32 = <strong>12,5 mol</strong><br/><br/>
+<strong>Passo 2 – Comparar com a proporção estequiométrica:</strong><br/><br/>
+
+                                A equação nos diz que: <strong>2 mol de H₂ reagem com 1 mol de O₂</strong><br/><br/>
+
+                                Se temos <strong>12,5 mol de O₂</strong>, quantos mol de H₂ serão necessários?<br/><br/>
+<center>
+                                    1 mol de O₂-----2 mol de H₂<br/>
+                                    12,5 mol de O₂-------------------x<br/><br/>
+                                    x = 12,5 × 2 = <strong>25 mol de H₂</strong>
+</center>
+<br/>
+<strong>Passo 3 – Comparar com o que temos disponível:</strong><br/>
+                                • Precisaríamos de: <strong>25 mol de H₂</strong><br/>
+                                • Temos disponível: <strong>20 mol de H₂</strong><br/>
+                                • 20 &lt; 25 → <strong style="color:var(--primary-dark);">não temos H₂
+                                    suficiente!</strong><br/><br/>
+<strong>Conclusão:</strong><br/>
+<strong style="color:var(--primary-dark);">H₂ é o reagente limitante</strong> (vai
+                                acabar primeiro)<br/>
+<strong style="color:#e67e22;">O₂ está em excesso</strong>
+</div>
+</div>
+</div>
+<!-- CÁLCULO DO EXCESSO -->
+<div style="background:white; border-radius:16px; padding:1rem; margin-top:0.8rem; border:1px solid #b7d0da;">
+<p><strong>📊 Calculando o excesso:</strong></p>
+<div style="background:#eef4f8; padding:0.5rem; border-radius:12px; text-align:center; font-size:1rem;">
+                            Excesso = Inicial – Consumido
+                        </div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:0.5rem;">
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px;">
+<strong>🍫 Brigadeiro:</strong><br/>
+                                1200g leite – 400g consumido = <strong>800g em excesso</strong>
+</div>
+<div style="background:#eef4f8; padding:0.8rem; border-radius:12px;">
+<strong>⚗️ Reação química:</strong><br/>
+                                400g O₂ – 320g consumido = <strong>80g de O₂ em excesso</strong>
+</div>
+</div>
+</div>
+</div>
+<p style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted); text-align:center;">
+<em>Referência: OLMSTED III, J.; WILLIAMS, G. M. Chemistry. 3. ed. Nova York: John Wiley &amp; Sons
+                        Inc., 2002. p. 148.</em>
+</p>
+</div>
+</div>
+<div class="slide">
+<div class="slide-header">
+<span class="icon-big">🧹</span>
+<h2>Reagentes com Impurezas (Pureza)</h2>
+<span class="badge">Massa que realmente reage</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>📌 O que significa "impureza"?</h3>
+<p>
+                    Em química, impureza não é necessariamente algo tóxico. É qualquer substância presente
+                    na amostra que <strong>não participa</strong>
+                    da reação de interesse.
+                </p>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>📌 Fórmula da pureza:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+                        Massa pura = Massa total × (pureza / 100)
+                    </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Onde:</strong> pureza = porcentagem da amostra que é o reagente desejado
+                    </div>
+</div>
+<div class="highlight-box">
+<strong>Exemplo:</strong> 200 g de CaCO₃ com 80% de pureza.<br/>
+                    Massa que reage = 200 × 0,80 = <strong>160 g</strong>.<br/>
+                    Impurezas = 200 – 160 = 40 g (não participam).
+                </div>
+<p>
+                    ⚠️ <strong>Importante:</strong> todos os cálculos estequiométricos devem ser feitos com
+                    a <strong>massa pura</strong>
+                    (que realmente reage).
+                </p>
+</div>
+<div class="text-block">
+<h3>🧪 Exemplo com pureza</h3>
+<p>
+                    Para produzir água ocorre a seguinte reação:
+                <p>
+<center>
+                        2H2 + O2 → 2H2O
+                    </center>
+</p>
+<strong>Questão:</strong> 50 g de H₂ com 80% de pureza reagem com O₂. Qual a massa de H₂O
+                produzida? (rendimento 100%)
+                </p>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem; border:1px solid #b7d0da;">
+<strong>Resolução:</strong>
+<ul>
+                        Massa pura de H₂ = 50 × 0,80 = 40 g <br/>
+                        Reação: 2 H₂ + O₂ → 2 H₂O<br/>
+<center>
+                            Proporção: 4 g H₂ -------- 36 g H₂O<br/>
+                            40 g H₂ ------ x
+                        </center>
+<p>
+                            x = (40 × 36) / 4 = <strong>360 g de H₂O</strong>
+</p>
+</ul>
+</div>
+<div class="tag">💡 A impureza não reage, por isso a massa de H₂O é calculada apenas com os
+                    40 g puros.</div>
+</div>
+</div>
+</div><div class="slide">
+<div class="slide-header">
+<span class="icon-big">📉</span>
+<h2>Rendimento de Reação</h2>
+<span class="badge">Real x Teórico</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>🔬 Conceito de Rendimento</h3>
+<p>
+                    O <strong>rendimento</strong> (ou eficiência) de uma reação química é a relação entre a quantidade
+                    de produto
+                    <strong>realmente obtida</strong> na prática e a quantidade que <strong>deveria ser obtida</strong>
+                    teoricamente, de acordo com os cálculos estequiométricos.
+                </p>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>📌 Fórmula do rendimento:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+                        Rendimento (%) = (massa real / massa teórica) × 100
+                    </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Onde:</strong> massa real = obtida na prática | massa teórica = calculada pela
+                        estequiometria
+                    </div>
+</div>
+<p><strong>📌 Por que o rendimento nunca é 100% na prática?</strong></p>
+<ul>
+<li><strong>Reações reversíveis:</strong> Muitas reações químicas não se completam porque atingem um
+                        <strong>equilíbrio químico</strong>, onde reagentes e produtos coexistem.
+                    </li>
+<li><strong>Perdas no manuseio:</strong> Durante a transferência, filtração ou purificação, parte do
+                        produto pode ser perdida.</li>
+<li><strong>Reações paralelas:</strong> Podem ocorrer reações secundárias que consomem parte dos
+                        reagentes, formando subprodutos indesejados.</li>
+<li><strong>Condições experimentais:</strong> Temperatura, pressão, pureza dos reagentes e outros
+                        fatores podem afetar a eficiência da reação.</li>
+</ul>
+<p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">
+<em>Referência: BROWN, T. L.; LEMAY, H. E.; BURSTEN, B. E. Química: a ciência central. 9. ed. São
+                        Paulo: Pearson, 2005. p. 88-89.</em>
+</p>
+</div>
+<div class="text-block">
+<h3>🧪 Exemplo prático de rendimento</h3>
+<p><strong>Questão:</strong> A decomposição térmica de 10,0 g de CaCO₃ (100% puro) deveria produzir 5,6
+                    g de CaO. Porém, obteve-se apenas 4,48 g. Qual foi o rendimento da reação?</p>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>Reação química:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+                        CaCO₃ → CaO + CO₂
+                    </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Proporção:</strong> 1 mol de CaCO₃ produz 1 mol de CaO
+                    </div>
+</div>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem; border:1px solid #b7d0da;">
+<strong>Resolução:</strong>
+<ul style="list-style:none; padding-left:0; margin-top:0.5rem;">
+<li><strong>Passo 1 – Calcular a massa teórica:</strong></li>
+<li>
+<center>
+                                CaCO₃ → CaO + CO₂<br/>
+                                100 g CaCO₃ -------- 56 g CaO<br/>
+                                10 g CaCO₃ ------ x
+                            </center>
+</li>
+<li>x = (10 × 56) / 100 = <strong>5,6 g de CaO (teórico)</strong><br/><br/></li>
+<li><strong>Passo 2 – Calcular o rendimento:</strong></li>
+<li>
+<center>
+                                Rendimento = (massa real / massa teórica) × 100<br/>
+                                Rendimento = (4,48 / 5,6) × 100
+                            </center>
+</li>
+<li>Rendimento = <strong>80%</strong></li>
+</ul>
+</div>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary); margin-top:0.5rem;">
+<strong>✅ Resposta final:</strong> O rendimento da reação foi de <strong>80%</strong>.
+                </div>
+<div class="tag" style="margin-top:0.5rem;">📌 <strong>Rendimento</strong> mede a eficiência da reação
+                    (real / teórico).</div>
+</div>
+</div>
+</div><div class="slide">
+<div class="slide-header">
+<span class="icon-big">📋</span>
+<h2>Impureza e Rendimento · Conceitos e Exemplo</h2>
+<span class="badge">Pureza + Rendimento</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>📌 Pureza vs Rendimento</h3>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem;">
+<p><strong>🔍 O que é pureza?</strong></p>
+<p>
+                        A <strong>pureza</strong> de uma amostra indica a porcentagem da massa total que é efetivamente
+                        o
+                        <strong>reagente de interesse</strong>. O restante da amostra é constituído por
+                        <strong>impurezas</strong>
+                        que não participam da reação.
+                    </p>
+<div style="background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary); margin-top:0.3rem; text-align:center;">
+                        Massa pura = Massa total × (pureza / 100)
+                    </div>
+</div>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem;">
+<p><strong>🔍 O que é rendimento?</strong></p>
+<p>
+                        O <strong>rendimento</strong> de uma reação mede a <strong>eficiência</strong> com que os
+                        reagentes
+                        são convertidos em produtos. Ele compara a quantidade real obtida com a quantidade teórica
+                        esperada.
+                    </p>
+<div style="background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary); margin-top:0.3rem; text-align:center;">
+                        Rendimento (%) = (massa real / massa teórica) × 100
+                    </div>
+</div>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da;">
+<p><strong>📌 Ordem correta dos cálculos:</strong></p>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.5rem; margin:0.5rem 0;">
+<div style="background:var(--primary-light); padding:0.5rem; border-radius:12px; text-align:center; border:1px solid var(--primary);">
+<strong>1º</strong><br/>
+                            Pureza
+                        </div>
+<div style="background:var(--primary-light); padding:0.5rem; border-radius:12px; text-align:center; border:1px solid var(--primary);">
+<strong>2º</strong><br/>
+                            Estequiometria
+                        </div>
+<div style="background:var(--primary-light); padding:0.5rem; border-radius:12px; text-align:center; border:1px solid var(--primary);">
+<strong>3º</strong><br/>
+                            Rendimento
+                        </div>
+</div>
+<div style="font-size:0.9rem; color:var(--text-muted); text-align:center; margin-top:0.3rem;">
+<em>Primeiro ajustamos a massa do reagente, depois calculamos o produto teórico e, por fim,
+                            corrigimos para o produto real.</em>
+</div>
+</div>
+<p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">
+<em>Referência: ATKINS, P.; JONES, L. Princípios de química. 5. ed. Porto Alegre: Bookman, 2012.
+                        Cap. 3.</em>
+</p>
+</div>
+<div class="text-block">
+<h3>🧪 Exemplo prático</h3>
+<p><strong>Questão:</strong> Uma amostra de 200 g de CaCO₃ com 80% de pureza foi aquecida para produzir
+                    CaO e CO₂. A reação teve rendimento de 70%. Qual a massa de CaO obtida?</p>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>Reação química:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+                        CaCO₃ → CaO + CO₂
+                    </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Proporção:</strong> 1 mol de CaCO₃ produz 1 mol de CaO
+                    </div>
+</div>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem; border:1px solid #b7d0da;">
+<strong>Resolução:</strong>
+<ul style="list-style:none; padding-left:0; margin-top:0.5rem;">
+<li><strong>Passo 1 – Pureza:</strong></li>
+<li>Massa pura de CaCO₃ = 200 × 0,80 = <strong>160 g</strong><br/><br/></li>
+<li><strong>Passo 2 – Estequiometria (massa teórica):</strong></li>
+<li>
+<center>
+                                Reação: CaCO₃ → CaO + CO₂<br/>
+                                Proporção: 100 g CaCO₃ -------- 56 g CaO<br/>
+                                160 g CaCO₃ ------ x
+                            </center>
+</li>
+<li>x = (160 × 56) / 100 = <strong>89,6 g de CaO (teórico)</strong><br/><br/></li>
+<li><strong>Passo 3 – Rendimento (massa real):</strong></li>
+<li>Massa real = 89,6 × 0,70 = <strong>62,72 g de CaO</strong></li>
+</ul>
+</div>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary); margin-top:0.5rem;">
+<strong>✅ Resposta final:</strong> A massa de CaO obtida é <strong>62,72 g</strong>.
+                </div>
+</div>
+</div>
+</div><div class="slide">
+<div class="slide-header">
+<span class="icon-big">🔗</span>
+<h2>Reações Sucessivas</h2>
+<span class="badge">Etapas encadeadas</span>
+</div>
+<div class="content-grid">
+<div class="text-block">
+<h3>📌 Conceito</h3>
+<p>
+                    Em muitos processos industriais, a obtenção de um produto final ocorre por meio de
+                    <strong>duas ou mais reações</strong>
+                    que acontecem em sequência. O produto de uma etapa é o reagente da etapa seguinte.
+                </p>
+<div class="formula-block" style="font-size:1rem;">
+                    A → B → C<br/>
+<span class="small">(produto de A → B vira reagente em B → C)</span>
+</div>
+<p><strong>Como calcular:</strong></p>
+<ol>
+<li>Fazer a estequiometria de <strong>A → B</strong> (descobrir quanto B é produzido).</li>
+<li>Usar a massa (ou mol) de B obtida como dado de entrada para a reação <strong>B → C</strong>.
+                    </li>
+</ol>
+<div class="highlight-box">
+<strong>⚠️ Atenção:</strong> nunca "pule" etapas. Cada reação tem sua própria proporção
+                    estequiométrica.
+                </div>
+</div>
+<div class="text-block">
+<h3>🧪 Exemplo: ZnS → ZnO → Zn</h3>
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:0.8rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>Reações envolvidas:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+<strong>1ª reação:</strong> ZnS + 3/2 O₂ → ZnO + SO₂<br/>
+<strong>2ª reação:</strong> ZnO + C → Zn + CO
+                    </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Reação global:</strong> ZnS → Zn (proporção 1:1 em mols)
+                    </div>
+</div>
+<p><strong>Questão:</strong> O metal zinco (Zn) compõe 5% da massa da medalha olímpica de bronze (450
+                    g). Considerando as massas molares Zn=65,4 g/mol e S=32 g/mol, e que as reações tenham 100% de
+                    rendimento, qual a massa de sulfeto de zinco (ZnS), em quilogramas, necessária para produzir 400
+                    medalhas de bronze?</p>
+<div style="background:#f5f9fc; border-radius:20px; padding:1rem; border:1px solid #b7d0da; margin-top:0.5rem;">
+<p><strong>Resolução passo a passo:</strong></p>
+<p><strong>Passo 1 – Calcular a massa de Zn em cada medalha:</strong></p>
+<ul>
+<li>A medalha tem 450 g e 5% é Zn</li>
+<li>Massa de Zn por medalha = 450 × 0,05 = <strong>22,5 g</strong></li>
+</ul>
+<p><strong>Passo 2 – Calcular a massa total de Zn para 400 medalhas:</strong></p>
+<ul>
+<li>22,5 g × 400 = <strong>9.000 g = 9 × 10³ g</strong></li>
+</ul>
+<p><strong>Passo 3 – Analisar a estequiometria das reações:</strong></p>
+<ul>
+<li>1ª reação: ZnS + 3/2 O₂ → ZnO + SO₂</li>
+<li>2ª reação: ZnO + C → Zn + CO</li>
+<li>Reação global: <strong>ZnS → Zn</strong> (proporção 1:1 em mols)</li>
+</ul>
+<p><strong>Passo 4 – Calcular a massa molar do ZnS:</strong></p>
+<ul>
+<li>ZnS = 65,4 + 32 = <strong>97,4 g/mol</strong></li>
+</ul>
+<p><strong>Passo 5 – Calcular a massa de ZnS necessária:</strong></p>
+<ul>
+<li>97,4 g de ZnS ——— 65,4 g de Zn</li>
+<li>x ——— 9 × 10³ g de Zn</li>
+<li>x = (9 × 10³ × 97,4) ÷ 65,4</li>
+<li>x = <strong>13,4 × 10³ g = 13,4 kg</strong></li>
+</ul>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary); margin-top:0.5rem;">
+<strong>✅ Resposta final:</strong> A massa de sulfeto de zinco necessária é <strong>13,4
+                            kg</strong>.
+                    </div>
+</div>
+<div class="tag">💡 Como as reações são sucessivas e 1 mol de ZnS gera 1 mol de Zn, usamos a relação
+                    direta.</div>
+</div>
+</div>
+</div><div class="slide">
+<div class="slide-header">
+<span class="icon-big">🏆</span>
+<h2>Exercício Integrado · Excesso e Rendimento</h2>
+<span class="badge">Todos os conceitos</span>
+</div>
+<div class="content-single text-block">
+<!-- EQUAÇÃO QUÍMICA FORMATADA -->
+<div style="background:white; border-radius:16px; padding:0.8rem; border:1px solid #b7d0da; margin-bottom:1.2rem; text-align:center;">
+<p style="margin-bottom:0.3rem;"><strong>Reação química:</strong></p>
+<div style="font-size:1.1rem; background:var(--primary-light); padding:0.5rem; border-radius:12px; border:1px solid var(--primary);">
+                    2 I₂ + N₂H₄ → 4 HI + N₂
+                </div>
+<div style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">
+<strong>Proporção:</strong> 2 mol de I₂ reagem com 1 mol de N₂H₄
+                </div>
+</div>
+<p><strong>Dados:</strong> I = 127; N = 14; H = 1. Foram utilizados 254 kg de I₂ e 80 kg de N₂H₄.</p>
+<p><strong>Determine:</strong> a massa do reagente em excesso (em kg) e a massa de N₂ formada (considere
+                rendimento de 100%).</p>
+<div style="background:#f5f9fc; border-radius:20px; padding:1.5rem; border:1px solid #b7d0da; margin:1rem 0;">
+<strong>Resolução passo a passo:</strong>
+<ul style="list-style:none; padding-left:0; margin-top:0.5rem;">
+<li><strong>Passo 1 – Calcular as massas molares:</strong></li>
+<li>
+                        • I₂ = 2 × 127 = <strong>254 g/mol</strong><br/>
+                        • N₂H₄ = (2×14) + (4×1) = 28 + 4 = <strong>32 g/mol</strong><br/><br/>
+</li>
+<li><strong>Passo 2 – Converter as massas para mols:</strong></li>
+<li>
+                        • Mols de I₂ = 254.000 g ÷ 254 g/mol = <strong>1000 mol</strong><br/>
+                        • Mols de N₂H₄ = 80.000 g ÷ 32 g/mol = <strong>2500 mol</strong><br/><br/>
+</li>
+<li><strong>Passo 3 – Identificar o reagente limitante:</strong></li>
+<li>
+                        • Proporção: 2 mol I₂ : 1 mol N₂H₄<br/>
+                        • Para 1000 mol de I₂, precisamos de 1000 ÷ 2 = <strong>500 mol de N₂H₄</strong><br/>
+                        • Temos 2500 mol de N₂H₄ → N₂H₄ está em <strong>EXCESSO</strong><br/>
+                        • <strong style="color:var(--primary-dark);">I₂ é o reagente limitante</strong><br/><br/>
+</li>
+<li><strong>Passo 4 – Calcular o excesso de N₂H₄:</strong></li>
+<li>
+                        • Excesso = Inicial – Consumido<br/>
+                        • Excesso = 2500 – 500 = <strong>2000 mol de N₂H₄</strong><br/>
+                        • 2000 mol × 32 g/mol = 64.000 g = <strong>64 kg de N₂H₄ em excesso</strong><br/><br/>
+</li>
+<li><strong>Passo 5 – Calcular a massa de N₂ formada:</strong></li>
+<li>
+<center>
+                            Proporção: 2 mol I₂ ———— 1 mol N₂<br/>
+                            1000 mol I₂ ———— x
+                        </center>
+</li>
+<li>
+                        • x = 1000 ÷ 2 = <strong>500 mol de N₂</strong><br/>
+                        • Massa molar do N₂ = 2 × 14 = <strong>28 g/mol</strong><br/>
+                        • Massa de N₂ = 500 × 28 = 14.000 g = <strong>14 kg de N₂</strong><br/><br/>
+</li>
+<li><strong>Passo 6 – Aplicar o rendimento (se houver):</strong></li>
+<li>
+                        • Considerando rendimento de 100%, a massa de N₂ é <strong>14 kg</strong><br/>
+                        • Se o rendimento fosse 80%: 14 × 0,80 = <strong>11,2 kg de N₂</strong>
+</li>
+</ul>
+</div>
+<div style="background:var(--primary-light); padding:0.8rem; border-radius:12px; border:2px solid var(--primary); margin-top:0.5rem;">
+<strong>✅ Resposta final:</strong><br/>
+                • <strong style="color:var(--primary-dark);">I₂ é o reagente limitante</strong><br/>
+                • <strong style="color:#e67e22;">N₂H₄ está em excesso</strong> (sobram 64 kg)<br/>
+                • A massa de N₂ formada é <strong>14 kg</strong> (com rendimento de 100%)
+            </div>
+</div>
+</div><div class="slide">
+<div class="slide-header">
+<span class="icon-big">📚</span>
+<h2>Resumo · Roteiro para qualquer questão</h2>
+<span class="badge">Checklist</span>
+</div>
+<div class="content-single text-block">
+<div class="formula-block" style="font-size:1rem; background: var(--primary-light); border-color: var(--primary);">
+                🔁 <strong>Fluxograma Definitivo (Passo a Passo)</strong>
+<div style="font-size:0.9rem; font-family:'Inter',sans-serif; color:var(--text-main); margin-top:0.8rem; text-align:left; line-height:1.6;">
+<strong>1.</strong> Balanceie a equação química<br/>
+<strong>2.</strong> Ajuste a <u>PUREZA</u> do reagente (se a amostra for impura)<br/>
+<strong>3.</strong> Converta os dados de entrada para <u>MOL</u><br/>
+<strong>4.</strong> Identifique o <u>LIMITANTE</u> (se derem dados de 2+ reagentes)<br/>
+<strong>5.</strong> Calcule a quantidade teórica do <u>PRODUTO</u><br/>
+<strong>6.</strong> Aplique o <u>RENDIMENTO</u> final da reação (se for &lt; 100%)
+                </div>
+</div>
+<div class="highlight-box">
+<strong>✅ Regras de Ouro:</strong>
+<ul>
+<li><strong>Sem Balanceamento, Sem Conta:</strong> Ajuste os coeficientes antes de qualquer cálculo.</li>
+<li><strong>Pureza (Entrada):</strong> Aplica-se no <u>reagente</u>, antes de converter para mol.</li>
+<li><strong>Rendimento (Saída):</strong> Aplica-se no <u>produto</u>, ao final do cálculo.</li>
+<li><strong>Reagente Limitante:</strong> Divida o mol de cada reagente pelo seu coeficiente; o menor resultado é o limitante.</li>
+</ul>
+</div>
+<h3 style="margin-top:1.5rem;">📌 Resumo dos Conceitos-Chave</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Conceito</th>
+<th>O que é?</th>
+<th>Onde aplicar?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pureza</strong></td>
+<td>% da amostra inicial que é o reagente real</td>
+<td>No início (sobre a massa do Reagente)</td>
+</tr>
+<tr>
+<td><strong>Limitante</strong></td>
+<td>Reagente que acaba primeiro e limita a reação</td>
+<td>Na comparação entre Reagentes</td>
+</tr>
+<tr>
+<td><strong>Excesso</strong></td>
+<td>Quantidade de reagente que sobra sem reagir</td>
+<td>Subtraindo: Inicial − Consumido</td>
+</tr>
+<tr>
+<td><strong>Rendimento</strong></td>
+<td>% de produto que realmente é produzido na prática</td>
+<td>No final (sobre a massa do Produto)</td>
+</tr>
+<tr>
+<td><strong>Reações Sucessivas</strong></td>
+<td>Sequência de reações encadeadas em etapas</td>
+<td>Somando as etapas ou via reagente intermediário</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="margin-top:1.5rem; text-align:center; font-weight:500; font-size:1.2rem;">
+                📖 Estude com calma, pratique os exercícios e domine a estequiometria!
+            </p>
+</div>
+</div></div>
+
+<!-- ============================================================
+SLIDE 6 – REAÇÕES COM IMPUREZAS (PUREZA)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 7 – RENDIMENTO DE REAÇÃO (CORRIGIDO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 8 – IMPUREZA + RENDIMENTO (REFATORADO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 5 – REAÇÕES SUCESSIVAS
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 9 – EXERCÍCIO INTEGRADO (EXCESSO + RENDIMENTO)
+============================================================ -->
+<!-- ============================================================
+SLIDE 9 – EXERCÍCIO INTEGRADO (EXCESSO + RENDIMENTO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 14 – RESUMO E DICAS FINAIS
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 10 – REAÇÕES SUCESSIVAS + EXCESSO (PEROVSKITA)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 11 – EXERCÍCIOS DO PDF (UECE + UFRGS)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 12 – UFRGS (ÁCIDO ACÉTICO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 13 – CALCÁRIO (PUREZA)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 14 – ASPIRINA (RENDIMENTO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 15 – ÁCIDO IODÍDRICO (EXCESSO)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 1 – Ferro-gusa (PUC-RJ)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 2 – Carvão na produção de ferro (Fuvest)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 3 – H₂SO₄ a partir de pirita (UFF)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 4 – Floculação (FGV)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 5 – Eliminação de SO₂ com calcário (Fuvest)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 6 – Galvanização (ENEM 2015)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 7 – Cal virgem (PUC-RS)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 8 – Produção de NaClO₃ (FEP)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 9 – Gás natural sintético (Unip-SP)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 10 – Air bag (FUVEST)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 11 – HNO₃ a partir de amônia
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 12 – Pirita para H₂SO₄
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 13 – Polêmica SO₂ (item a)
+============================================================ -->
+
+<!-- ============================================================
+SLIDE 14 – Polêmica HNO₃ (item b)
+============================================================ -->
+
+</body>
+</html>

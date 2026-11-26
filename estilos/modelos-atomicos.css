@@ -1,0 +1,85 @@
+
+        #modelos-atomicos .qa-modelos {
+          display: grid;
+          grid-template-columns: repeat(auto-fit,
+              minmax(min(100%, 220px), 1fr));
+          gap: 18px;
+          margin: 24px 0;
+        }
+
+        #modelos-atomicos .qa-modelo {
+          background: #f2f8fb;
+          border: 1px solid #c6dce6;
+          border-radius: 18px;
+          padding: 18px;
+          text-align: center;
+        }
+
+        #modelos-atomicos .qa-modelo svg {
+          display: block;
+          width: 100%;
+          max-width: 230px;
+          height: auto;
+          margin: 12px auto;
+        }
+
+        #modelos-atomicos .qa-modelo h3 {
+          margin: 0 0 6px;
+          color: #16475e;
+        }
+
+        #modelos-atomicos .qa-modelo p {
+          text-align: left;
+          font-size: .95rem;
+          line-height: 1.65;
+          margin: 10px 0;
+        }
+
+        #modelos-atomicos .qa-modelo .modelo-data {
+          display: block;
+          font-size: .85rem;
+          color: #537080;
+          margin-bottom: 8px;
+        }
+
+        #modelos-atomicos .modelo-apelido {
+          display: block;
+          text-align: center;
+          font-weight: 700;
+          color: #285d74;
+          margin: 10px 0;
+        }
+
+        #modelos-atomicos .modelo-diagrama {
+          background: #f5f9fc;
+          border: 1px solid #c7dce7;
+          border-radius: 18px;
+          padding: 18px;
+          margin: 18px 0;
+        }
+
+        #modelos-atomicos .modelo-diagrama svg {
+          display: block;
+          width: 100%;
+          max-width: 850px;
+          height: auto;
+          margin: auto;
+        }
+
+        #modelos-atomicos .modelo-legenda {
+          color: #536d7a;
+          font-size: .85rem;
+          text-align: center;
+          margin-top: 12px;
+        }
+
+        @media (max-width: 600px) {
+          #modelos-atomicos .modelo-diagrama {
+            padding: 10px;
+          }
+
+          #modelos-atomicos .qa-modelo {
+            padding: 16px;
+          }
+        }
+      

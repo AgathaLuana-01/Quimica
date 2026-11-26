@@ -1,0 +1,125 @@
+
+        /* Ajuste exclusivo deste slide.
+        Mantém o layout centralizado do site. */
+
+        #grupos-periodos .qa-periodic {
+          display: grid;
+          grid-template-columns: 54px repeat(18, 47px);
+          grid-template-rows: 32px repeat(7, 62px);
+          gap: 4px;
+          width: max-content;
+          margin: 12px auto;
+        }
+
+        #grupos-periodos .qa-layer {
+          grid-column: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #dceef5;
+          border: 1px solid #a5c9d8;
+          border-radius: 8px;
+          color: #174d67;
+          font-weight: 800;
+          font-size: 19px;
+        }
+
+        #grupos-periodos .qa-layer small {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        #grupos-periodos .qa-periodic .group {
+          text-align: center;
+          align-self: center;
+          font-size: 14px;
+          font-weight: 800;
+          color: #214d61;
+        }
+
+        #grupos-periodos .qa-periodic .el {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-width: 0;
+          background: #dce9f0;
+          border: 1px solid #8fbbc9;
+          border-radius: 7px;
+          color: #173d50;
+          font-size: 12px;
+        }
+
+        #grupos-periodos .qa-periodic .el strong {
+          font-size: 20px;
+          line-height: 1.2;
+        }
+
+        #grupos-periodos .qa-periodic .metal {
+          background: #d5e5fa;
+        }
+
+        #grupos-periodos .qa-periodic .ametal {
+          background: #dff1d8;
+        }
+
+        #grupos-periodos .qa-periodic .nobre {
+          background: #e9dbfa;
+        }
+
+        #grupos-periodos .qa-periodic .semi {
+          background: #f3e5c7;
+        }
+
+        #grupos-periodos .qa-periodic .destaque {
+          background: #ffe4a3;
+          border: 3px solid #b57b13;
+          color: #664008;
+          box-shadow: 0 0 0 3px #ffdfa066;
+        }
+
+        #grupos-periodos .qa-periodic .bloco {
+          display: grid;
+          place-items: center;
+          background: #e7edf1;
+          border: 1px dashed #a8b9c3;
+          border-radius: 8px;
+          color: #4a6573;
+          font-size: 12px;
+          text-align: center;
+          padding: 5px;
+        }
+
+        #grupos-periodos .qa-legend {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin: 12px 0;
+          justify-content: center;
+          font-size: .9rem;
+        }
+
+        #grupos-periodos .qa-legend span {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        #grupos-periodos .qa-dot {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 4px;
+          border: 1px solid #789;
+        }
+
+        #grupos-periodos .qa-figure {
+          overflow: hidden;
+        }
+
+        #grupos-periodos .qa-table-scroll {
+          overflow-x: auto;
+          padding-bottom: 10px;
+        }
+      

@@ -1,0 +1,69 @@
+
+        #ions-cations-anions .ion-processo {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
+          align-items: center;
+          gap: 8px;
+          margin: 18px 0;
+        }
+
+        #ions-cations-anions .ion-figura {
+          text-align: center;
+          min-width: 0;
+        }
+
+        #ions-cations-anions .ion-figura svg {
+          display: block;
+          width: 100%;
+          max-width: 230px;
+          height: auto;
+          margin: auto;
+        }
+
+        #ions-cations-anions .ion-figura strong {
+          display: block;
+          font-size: 1.5rem;
+          margin: 5px 0;
+        }
+
+        #ions-cations-anions .ion-figura span {
+          display: block;
+          font-size: .9rem;
+          line-height: 1.6;
+        }
+
+        #ions-cations-anions .ion-seta {
+          text-align: center;
+          color: #176e74;
+          font-weight: 700;
+          font-size: .95rem;
+        }
+
+        #ions-cations-anions .ion-seta .seta {
+          display: block;
+          font-size: 2.5rem;
+          line-height: 1.2;
+        }
+
+        #ions-cations-anions .ion-legenda {
+          text-align: center;
+          font-size: .85rem;
+          margin-top: 8px;
+          color: #526a75;
+        }
+
+        @media (max-width: 600px) {
+          #ions-cations-anions .ion-processo {
+            grid-template-columns: 1fr;
+            gap: 12px;
+          }
+
+          #ions-cations-anions .ion-figura svg {
+            max-width: 210px;
+          }
+
+          #ions-cations-anions .ion-seta .seta {
+            transform: rotate(90deg);
+          }
+        }
+      

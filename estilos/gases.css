@@ -1,0 +1,162 @@
+
+    /* Complementos específicos de Gases. As cores, cartões, grades e tipografia vêm de styles.css. */
+    .gases-jumps {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: .9rem;
+      margin: 1.3rem 0 2rem
+    }
+
+    .gases-jumps .tag {
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: none;
+      cursor: pointer
+    }
+
+    .gases-jumps .tag:hover {
+      filter: brightness(.94)
+    }
+
+    .gases-formula {
+      line-height: 1.85;
+      overflow-wrap: anywhere
+    }
+
+    .gases-mini-chart {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto
+    }
+
+    .gases-options {
+      padding-left: 1.5rem;
+      margin: 1rem 0 0 0
+    }
+
+    .gases-options li {
+      padding: .15rem .1rem .25rem .15rem;
+      margin-bottom: .35rem
+    }
+
+    .gases-figure {
+      max-width: 100%;
+      margin: .9rem auto
+    }
+
+    .gases-figure img {
+      max-height: none;
+      min-height: 0;
+      object-fit: contain;
+      width: 100%;
+      height: auto
+    }
+
+    .gases-detail {
+      margin-top: .65rem;
+      cursor: pointer
+    }
+
+    .gases-detail summary {
+      color: var(--primary);
+      font-weight: 600;
+      list-style-position: outside;
+      outline-offset: 4px
+    }
+
+    .gases-answer-body {
+      padding: 1rem 1.1rem;
+      background: #f8fbfd;
+      border: 1px solid #d8e6ed;
+      border-radius: 16px;
+      margin-top: .75rem;
+      font-size: .97rem;
+      cursor: auto
+    }
+
+    .gases-answer-body p {
+      margin-bottom: .9rem;
+      overflow-wrap: anywhere
+    }
+
+    .gases-answer-body code {
+      font-family: 'Courier New', monospace;
+      font-size: .94em;
+      background: #e7f0f3;
+      color: #073c48;
+      border-radius: 5px;
+      padding: .1rem .28rem;
+      white-space: normal;
+      overflow-wrap: anywhere
+    }
+
+    .gases-answer {
+      background: var(--primary-light);
+      padding: .9rem;
+      border-radius: 12px;
+      border: 2px solid var(--primary);
+      font-weight: 600;
+      margin-top: 1.2rem
+    }
+
+    .gases-warning {
+      background: #fff6db;
+      border-left: 5px solid #d7982c;
+      border-radius: 12px;
+      padding: .85rem 1rem;
+      margin-top: 1rem;
+      color: #634300;
+      line-height: 1.6
+    }
+
+    .gases-small-nav {
+      margin-top: 1.5rem;
+      font-size: .9rem
+    }
+
+    .gases-question-title {
+      font-size: .8em
+    }
+
+    .gases-answers-table {
+      max-width: 770px;
+      margin: 0 auto
+    }
+
+    .gases-answers-table td:first-child {
+      font-weight: 700;
+      width: 110px
+    }
+
+    @media (max-width:850px) {
+      .gases-answer-body {
+        padding: .75rem
+      }
+
+      .gases-options {
+        font-size: .95rem
+      }
+
+      .gases-jumps {
+        gap: .5rem
+      }
+    }
+
+    @media print {
+      .gases-detail .gases-answer-body {
+        display: block !important
+      }
+
+      .gases-jumps,
+      .gases-small-nav {
+        display: none !important
+      }
+
+      .gases-answer-body {
+        background: #fff !important
+      }
+    }
+  

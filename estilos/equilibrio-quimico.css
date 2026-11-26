@@ -1,0 +1,89 @@
+
+/* Estilos locais da aula de Equilíbrio: preservam a identidade visual do projeto. */
+.eq-page .slide-container{max-width:1120px;margin:auto}
+.eq-page .eq-slide{scroll-margin-top:88px}
+.eq-page .slide-header h2{line-height:1.2}
+.eq-page .text-block{max-width:100%;font-size:1.04rem;line-height:1.75}
+.eq-page .eq-prose>p,.eq-page .eq-prose>.eq-note{margin:1rem 0}
+.eq-page .eq-prose h3{margin:1.7rem 0 .6rem;font-size:1.23rem}
+.eq-page .eq-prose small{color:var(--text-muted)}
+.eq-topbar{position:sticky;top:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;background:rgba(255,255,255,.97);box-shadow:0 5px 20px rgba(20,50,55,.08);border:1px solid #d7e8e3;border-radius:15px;padding:.6rem .7rem;margin-bottom:1rem}
+.eq-topbar a,.eq-topbar button{font:inherit;font-size:.85rem;border:0;padding:.48rem .65rem;color:#155e50;background:#e7f5ef;border-radius:9px;text-decoration:none;cursor:pointer}
+.eq-topbar button:hover,.eq-topbar a:hover{background:#cce9dc}
+.eq-topbar .eq-progress{margin-left:auto;color:#365e54;font-size:.8rem;font-weight:700}
+.eq-path{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:1rem 0}
+.eq-path a{padding:1rem;border:1px solid #b8d6cc;background:#eff8f4;border-radius:14px;color:#165c50;font-weight:700;text-decoration:none}
+.eq-path a:hover{background:#d6eee4}
+.eq-stats{display:inline-flex;padding:.5rem .9rem;border-radius:12px;background:#ecf7f2;color:#256b57;font-weight:800}
+.eq-note{background:#e9f6f0;border-left:5px solid #2c8d70;padding:1rem 1.2rem;border-radius:13px;line-height:1.68;margin:1rem 0}
+.eq-note.alert{background:#fff7e6;border-left-color:#d49a2d;color:#654b24}
+.eq-steps{list-style:none!important;counter-reset:step;padding:0!important;margin:1rem 0!important}
+.eq-steps li{position:relative;padding:.35rem .4rem .45rem 2.2rem;margin-bottom:.55rem!important;counter-increment:step;border-bottom:1px solid #dce8e7}
+.eq-steps li:before{content:counter(step);position:absolute;left:.15rem;top:.38rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#c8e9db;color:#165f50;font-weight:800;text-align:center;line-height:1.5rem;font-size:.82rem}
+.eq-reaction{max-width:100%;overflow-x:auto;overflow-y:hidden;white-space:normal;text-align:center;margin:1rem auto;padding:.95rem .8rem;background:linear-gradient(125deg,#f3faf8,#e8f3f7);border:1px solid #c6dfe0;border-radius:13px;color:#164b58;font-weight:750;font-size:1.18rem;line-height:1.9}
+.eq-reaction span{margin:0 .3rem;color:#26816a}
+.eq-formula{font-size:1.06rem!important;overflow-wrap:anywhere;line-height:1.9}
+.eq-figure{margin:1.1rem auto;background:#f9fcfb;border-radius:16px;padding:.5rem;border:1px solid #bdd9d0;max-width:900px}
+.eq-chart{display:block;width:100%;height:auto}
+.eq-figure figcaption{text-align:center;color:#506a65;font-size:.87rem;padding:.55rem;line-height:1.5}
+.eq-process{display:grid;grid-template-columns:1fr minmax(130px,.6fr) 1fr;align-items:center;gap:1rem;border:1px solid #bad8d3;border-radius:18px;background:#f1f8f6;padding:1.2rem;margin:1.1rem 0}
+.eq-process>div{display:flex;flex-direction:column;gap:.3rem;text-align:center;min-width:0}
+.eq-process>div:first-child,.eq-process>div:last-child{background:white;border:1px solid #d1e6df;padding:.9rem;border-radius:12px}
+.eq-process span{font-size:.85rem;line-height:1.55}
+.eq-process .eq-arrow b{color:#146d55;font-size:.86rem}
+.eq-original-quote{font-size:.92rem;color:#405b60;background:#f5f8f8;padding:1rem 1.2rem;border-left:4px solid #8db7a8;margin:1rem 0;line-height:1.65}
+.eq-original-quote small{display:block;text-align:right}
+.eq-page .exam-quiz{margin:1rem 0 1.8rem;padding:1.3rem 1.5rem;background:#fbfefd;border:1px solid #cadfd9;box-shadow:0 3px 12px rgba(15,60,65,.035)}
+.eq-page .exam-quiz h3{font-size:1.13rem;margin:.3rem 0 .8rem!important;color:#143c40}
+.eq-page .exam-quiz .eq-reaction{font-size:1.05rem}
+.eq-page .exam-quiz .eq-figure{margin:1rem 0}
+.eq-page .exam-quiz .option-row{align-items:flex-start;line-height:1.55}
+.eq-page .exam-quiz .option-row input{min-width:17px}
+.eq-page .option-row.is-answer{border-color:#2e8e67;background:#e0f6e9}
+.eq-page .option-row.is-selected-wrong{border-color:#cd655d;background:#fff0ec}
+.eq-page .solution-box{border:1px solid #b7d9c9}
+.eq-page .solution-text{line-height:1.73}
+.eq-page .solution-text p{margin:.4rem 0}
+.eq-page .solution-text ol{margin:.75rem 0}
+.eq-source{margin:.7rem 0 0;font-size:.8rem;color:#526b66}
+.eq-page .eq-back{margin:1.8rem 0 0;text-align:right;font-size:.83rem}
+.eq-page .eq-back a{font-weight:700;color:#286d5e}
+.eq-home{display:inline-block;border-radius:11px;background:#e2f3ea;padding:.75rem 1rem;font-weight:800}
+.eq-page :focus-visible{outline:3px solid #e6a92d;outline-offset:3px}
+@media(max-width:700px){.eq-topbar{position:static}.eq-topbar .eq-progress{margin-left:0;width:100%}.eq-process{grid-template-columns:1fr}.eq-process .eq-arrow{padding:.5rem}.eq-page .exam-quiz{padding:1.05rem}.eq-reaction{font-size:1rem}.eq-page .eq-slide{padding:1.2rem}.eq-page .slide-header h2{font-size:1.4rem}}
+@media print{.eq-topbar,.eq-back,.check-answer,.eq-progress,.eq-home{display:none!important}.eq-page .slide{break-inside:auto!important;border:1px solid #ddd!important;box-shadow:none!important;padding:.7rem!important}.eq-page .exam-quiz{break-inside:avoid!important}.eq-page .solution-box{display:block!important}.eq-page .solution-box .solution-text{display:block!important}}
+
+/* Slide 4: clareza entre coeficiente, concentração e variação estequiométrica. */
+.eq-kc-lead{font-size:1.03rem}
+.eq-kc-terms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1.1rem 0}
+.eq-kc-term{background:#f1f8f5;border:1px solid #cce4d9;border-radius:12px;padding:.85rem .9rem;line-height:1.5}
+.eq-kc-term strong{display:block;margin-bottom:.2rem;color:#18594c}
+.eq-kc-term span{color:#385b55;font-size:.9rem}
+.eq-kc-math{display:flex;justify-content:center;align-items:center;gap:.65rem;flex-wrap:wrap;margin:1.1rem 0;padding:.8rem .5rem;font-size:1.27rem;font-weight:750;color:#164b58;line-height:1.55}
+.eq-kc-frac{display:inline-flex;flex-direction:column;align-items:stretch;text-align:center;max-width:100%;vertical-align:middle}
+.eq-kc-frac .eq-kc-num{border-bottom:2px solid currentColor;padding:0 .6rem .24rem}
+.eq-kc-frac .eq-kc-den{padding:.2rem .6rem 0}
+.eq-kc-math sup{font-size:.7em}
+.eq-kc-math sub{font-size:.72em}
+.eq-kc-step{margin:1rem 0 0;border-top:1px solid #d5e6de;padding-top:.75rem}
+.eq-kc-step>strong{color:#18594c}
+.eq-kc-table th,.eq-kc-table td{text-align:center}
+.eq-kc-table th:first-child,.eq-kc-table td:first-child{text-align:left;font-weight:700}
+.eq-kc-table .eq-kc-final{background:#e7f5ed;font-weight:700}
+.eq-kc-strong{background:#eef7f3;border-left:4px solid #3c9478;padding:.85rem 1rem;border-radius:10px;margin:.9rem 0}
+.eq-kc-caption{font-size:.89rem;color:#536b66;margin:.5rem 0 .95rem;line-height:1.5}
+.eq-kc-alt{padding:1rem;background:#f5f8ff;border-left:4px solid #6b8ab5;border-radius:11px;margin:1.1rem 0}
+.eq-kc-more{margin:.85rem 0;padding:.8rem 1rem;border:1px solid #cadfd9;border-radius:12px;background:#fbfdfc}
+.eq-kc-more summary{font-weight:750;color:#18594c;cursor:pointer}
+@media(max-width:700px){.eq-kc-terms{grid-template-columns:1fr}.eq-kc-math{font-size:1.05rem;gap:.45rem}.eq-kc-frac .eq-kc-num,.eq-kc-frac .eq-kc-den{padding-left:.28rem;padding-right:.28rem}.eq-kc-term{padding:.65rem .85rem}.eq-kc-table{font-size:.87rem}}
+
+/* Gabaritos ampliados: passos nítidos e fórmulas legíveis em tela e impressão. */
+.eq-page .solution-text .eq-sol-result{font-size:1.035rem;line-height:1.6;margin:.35rem 0 .8rem;color:#1b5248}
+.eq-page .solution-text .eq-sol-steps{margin:.65rem 0!important}
+.eq-page .solution-text .eq-sol-steps li{padding-top:.48rem;padding-bottom:.57rem;line-height:1.72}
+.eq-page .solution-text .eq-sol-equation{display:block;text-align:center;max-width:100%;overflow-x:auto;white-space:nowrap;background:#f0f7f5;border:1px solid #c7e3da;border-radius:10px;padding:.55rem .45rem;margin:.7rem 0;font-size:1.08rem;font-weight:720;color:#174f4c}
+.eq-page .solution-text .eq-sol-math{max-width:100%;font-size:1.18rem!important;background:#f0f7f5;border:1px solid #c7e3da;border-radius:10px;margin:.7rem auto;padding:.7rem .3rem}
+.eq-page .solution-text .eq-sol-conclusion{margin:.85rem 0 .6rem;border-left:4px solid #31836c;border-radius:9px;background:#e9f5ef;color:#17493f;padding:.8rem 1rem;line-height:1.65}
+.eq-page .solution-text .eq-sol-tip{margin:.75rem 0 .2rem;border-left:3px solid #d3a64c;border-radius:8px;background:#fff9ed;color:#63502a;padding:.75rem .9rem;line-height:1.65}
+@media(max-width:700px){.eq-page .solution-text .eq-sol-math{font-size:1rem!important;gap:.45rem}.eq-page .solution-text .eq-sol-equation{font-size:.95rem}.eq-page .solution-text .eq-sol-steps li{padding-left:2rem}}
+@media print{.eq-page .solution-text .eq-sol-math,.eq-page .solution-text .eq-sol-equation,.eq-page .solution-text .eq-sol-conclusion{break-inside:avoid}}
